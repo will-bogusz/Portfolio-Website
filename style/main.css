@@ -206,16 +206,14 @@ a:hover {
       transition: all ease-in-out 0.2s; }
     .social-links a:hover {
       transform: scale(1.1) translateY(-2px); }
-      .social-links a:hover .fa-twitter {
-        color: #00acee; }
       .social-links a:hover .fa-instagram {
         color: #c13584; }
       .social-links a:hover .fa-discord {
         color: #738adb; }
       .social-links a:hover .fa-linkedin {
         color: #4875b4; }
-      .social-links a:hover .fa-codepen {
-        color: #212121; }
+      .social-links a:hover .fa-spotify {
+        color: #1DB954; }
 
 .back-to-top i {
   color: #fffcf2;
