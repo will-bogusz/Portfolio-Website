@@ -296,7 +296,8 @@ section {
       justify-content: center; }
       #about .about-wrapper__image img {
         max-width: 350px;
-        width: 100%; }
+        width: 100%;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7); }
       @media (max-width: 75em) {
         #about .about-wrapper__image {
           height: 100%; } }
