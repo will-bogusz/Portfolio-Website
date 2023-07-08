@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <title>Will Bogusz | Resume</title>
+
+    <meta name="description" content="Will Bogusz | Security Engineer" />
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+    <meta name="theme-color" content="#eb5e28" />
+
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+
+  <body>
+    <div class="followed-resume">
+      <h2 class="section-title">Resume</h2>
+      <div class="resume-wrapper">
+        <embed src="files/Resume.pdf" type="application/pdf" width="100%" height="100%" />
+      </div>
+      </br>
+      </br>
+      <a href="index.html" class="cta-btn cta-btn--resume">Back to Home</a>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <a
+            onclick="openDiscordApp()"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="discord"
+            style="cursor: pointer;"
+          >
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/willbogusz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://open.spotify.com/user/safzk2hbi3awaprqjdle62yba?si=f5643c9eb6814a50"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="spotify"
+          >
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/will-bogusz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/will-bogusz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Website by Will Bogusz
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+    <script>
+      function openDiscordApp() {
+        var userId = "1024284962750484521"; // Your Discord User ID Here
+
+        // check that the user has installed discord
+        if (window.navigator && window.navigator.msLaunchUri) {
+          // for Webbrowser
+          window.navigator.msLaunchUri("discord://user?id=" + userId);
+        } else if (window.navigator && window.navigator.userAgent.match(/(android|iphone|ipad)/i)) {
+          // for andorid and ios devices
+          window.location.href = "discord://user?id=" + userId;
+        } else {
+          // for other devices or webbrowsers
+          window.open("https://discord.com/users/" + userId);
+        }
+      }
+    </script>
+  </body>
+</html>
