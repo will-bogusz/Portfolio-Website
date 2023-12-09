@@ -460,6 +460,24 @@ section .row span {
     }
 }
 
+#about .about-wrapper__info .about-wrapper__info-text,
+#about .about-wrapper__info .about-wrapper__info-text ul,
+#about .about-wrapper__info .about-wrapper__info-text ul li {
+    /* Add the styles that are being applied to .about-wrapper__info-text paragraphs */
+    /* Example: */
+    font-size: 16px;
+    line-height: 1.6;
+    color: inherit;
+    padding-left: 2rem;
+    /* Add any other styles that are being applied to your paragraphs */
+}
+
+/* If you want to remove the default padding and bullets from the list */
+#about .about-wrapper__info .about-wrapper__info-text ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
 #contact {
     background-image: linear-gradient(135deg, #f6ae2d 0%, #f26419 100%);
     -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
